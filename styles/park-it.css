@@ -11,3 +11,40 @@ body {
     top: 0px;
     left: 0px; z-index: 10; /* scrolling happens beneath navbar*/
 }
+#park{
+    float: left;
+}
+
+#retrieve {
+    padding: 5px 10px;
+    margin: 0px 15px;
+    font-size: 14px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 0px 15px;
+    font-size: 14pt;
+}
+
+#container {
+    position: absolute; /* container will sit beneath nav bar */
+    top: 60px;
+    left: 0px;
+    width: 100%;
+}
+#instructions {
+    position : relative;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 17pt;
+}
+
+#map {
+    position: relative;
+    height: 320px; /* necessary to display on screen */
+    width: 90%;
+    margin: 15px auto;
+    padding: 0px 10px;
+}
