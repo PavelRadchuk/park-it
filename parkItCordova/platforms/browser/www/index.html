@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" charset="width=device-width, initial-scale=1.0">
+        <title>Park-It</title>
+
+        <link rel="stylesheet" href="./css/park-it-android.css">
+    </head>
+    <body>
+        <!-- Nav Bar -->
+        <div id="navBar">
+            <button id="park">Park</button>
+            Park It
+            <button id="retrieve" >Find</button>
+        </div>
+
+        <div class="container">
+            <div id="instructions">
+                <p>Click the Park button to set your parking location.</p>
+                <p>Click the Find button to retrieve your parking location.</p>
+                <p class="center"><button id="gotIt">Got it!</button></p>
+            </div>
+            <div id="map">Map here</div>
+            <script>
+                function initMap() {
+                    var grc = {lat: 47.313582, lng: -122.1800072};
+                    var mapDiv = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 6,
+                        center: grc
+                    });
+                    var marker = new google.maps.Marker({
+                        position: grc,
+                        map: mapDiv
+                    })
+                }
+            </script>
+            <div id="directions">Directions here</div>
+        </div>
+        <!--JavaScript-->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/park-it.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pK31Y5EifE7twr2v1zZe5lJYaybeHbE&callback=initMap"></script>
+    </body>
+</html>
