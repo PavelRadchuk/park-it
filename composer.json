@@ -1,0 +1,12 @@
+{
+  "name": "park-it/355",
+  "authors": [
+    {
+      "name": "Pavel Radchuk",
+      "email": "pradchuk@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
